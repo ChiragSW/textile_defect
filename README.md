@@ -11,19 +11,19 @@
 - **Output**: best model saved per run as `best_fabric_defect_model_{split}_run{n}.pkl`.
 
 **Metrics**
-Classification report for run 10:
+## Classification Report
 
-              precision    recall  f1-score   support
+| Class        | Precision | Recall | F1-Score | Support |
+|--------------|-----------|--------|----------|---------|
+| Hole         | 0.73      | 0.90   | 0.81     | 21      |
+| Horizontal   | 0.56      | 0.82   | 0.67     | 11      |
+| Vertical     | 0.00      | 0.00   | 0.00     | 10      |
+| **Accuracy** |           |        | **0.67** | **42**  |
+| **Macro Avg** | 0.43     | 0.57   | 0.49     | 42      |
+| **Weighted Avg** | 0.51 | 0.67   | 0.58     | 42      |
 
-        hole       0.73      0.90      0.81        21
-  horizontal       0.56      0.82      0.67        11
-    vertical       0.00      0.00      0.00        10
-
-    accuracy                           0.67        42
-   macro avg       0.43      0.57      0.49        42
-weighted avg       0.51      0.67      0.58        42
-
-Accuracy for run 10: 66.67%
+**Overall Accuracy**
+**66.67%**
 
 **Example Prediction (hole_image.jpg)**
 - **Image**: `hole_image.jpg`
